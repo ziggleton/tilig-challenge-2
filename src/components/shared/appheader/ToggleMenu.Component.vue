@@ -18,7 +18,7 @@
       const state = reactive({
         isOpen: false,
         menuClass: computed(() => {
-          if (!state.isOpen) return null;
+          if (!state.isOpen) return "closed";
           return "open";
         }),
         toggleMenu: () => {
@@ -92,6 +92,11 @@
     transform: translate(110%, 0);
     z-index: 10000;
     animation: slideOut 0.5s;
+  }
+  .menu-content.closed {
+    transform: translate(110%, 0);
+    animation: slideOut 0.5s;
+    opacity: 1;
   }
   .menu-content.open {
     transform: translate(0, 0);
