@@ -68,8 +68,8 @@
 
 <style lang="scss" scoped>
   .list-item {
-    background: $brand-primary;
-    color: $white;
+    background: $bg-primary;
+    color: $text-primary;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -77,7 +77,7 @@
     overflow: hidden;
     .emoji {
       width: 46px;
-      background: $black;
+      background: $brand-primary;
       display: flex;
       padding: 0px 16px;
       flex-direction: row;

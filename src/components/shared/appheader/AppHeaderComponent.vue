@@ -1,6 +1,6 @@
 <template>
   <header id="app_header">
-    <div class="logo"><h4 class="page-title white">Tilig</h4></div>
+    <div class="logo"><h4 class="page-title">Tilig</h4></div>
     <div class="menu">
       <ToggleMenuComponent></ToggleMenuComponent>
     </div>
@@ -19,8 +19,8 @@
 <style lang="scss" scoped>
   #app_header {
     height: 54px;
-    background: $black;
-    color: $white;
+    background: $bg-primary;
+    color: $text-primary !important;
     display: flex;
     flex-direction: row;
     align-items: center;

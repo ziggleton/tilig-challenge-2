@@ -51,7 +51,7 @@
       margin-bottom: 5px;
       position: relative;
       pointer-events: none;
-      background: $white;
+      background: $text-primary;
       border-radius: 3px;
       z-index: 1;
       transform-origin: 4px 0px;
@@ -68,7 +68,7 @@
   .toggle-menu.open > span {
     opacity: 1;
     transform: rotate(-45deg) translate(-9px, -4px);
-    background: $white;
+    background: $text-primary;
   }
 
   .toggle-menu.open > span:nth-last-child(3) {
@@ -79,29 +79,31 @@
     transform: rotate(45deg) translate(-12px, -1px);
   }
   .menu-content {
-    background: $black;
+    background: $brand-primary;
     border-radius: 0.3125rem;
-    border: 0.0625rem solid $black;
+    border: 0.0625rem solid $bg-primary;
     height: auto;
     min-width: 23.4375rem;
     opacity: 0;
     padding: 0.5rem;
     position: absolute;
+    visibility: visible;
+    will-change: transform;
+    opacity: 1;
     right: 0.5em;
     top: 62px;
     transform: translate(110%, 0);
     z-index: 10000;
-    animation: slideOut 0.5s;
   }
   .menu-content.closed {
     transform: translate(110%, 0);
-    animation: slideOut 0.5s;
-    opacity: 1;
+    animation: slideOut 0.3s;
   }
   .menu-content.open {
     transform: translate(0, 0);
     animation: slidein 0.5s;
     opacity: 1;
+    visibility: visible;
   }
 
   @keyframes slidein {
